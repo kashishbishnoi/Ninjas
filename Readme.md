@@ -5,11 +5,10 @@ Hangman is a classic word-guessing game that is often played as a pen-and-paper 
 
 TEAM MEMBERS :-
 Manager = Muskan-2310990743
-Testing = Kashish-2310990710
-Coder = Harshita Lamba-231099687
+Tester = Kashish-2310990710
+Developer = Harshita Lamba-231099687
 
 INSTRUCTIONS FOR RUNNIG THE GAME:-
-
 
      - Team members' names and roles.
      - Instructions for running the game.
