@@ -1,0 +1,88 @@
+import random
+words=["cat","bat","dad","net","maid","kit","dog","sim"]
+choice="y"
+c=0
+i=0
+figure=['''
+    
+    +---+
+       |
+       |
+       |
+      ===''','''
+      
+   +---+
+   O   |
+       |
+       |
+      ===''', '''
+   +---+
+   O   |
+   |   |
+       |
+      ===''','''
+   +---+
+   O   |
+  /|   |
+       |
+      ===''', '''
+   +---+
+   O   |
+  /|\  |
+       |
+      ===''','''
+   +---+
+   O   |
+  /|\  |
+  /    |
+     ===''','''
+   +---+
+   O   |
+  /|\  |
+  / \  |
+       ==='''
+]
+while(choice=="y"):
+    w=random.choice(words) 
+    l=len(w)
+    d=0
+    print("WELCOME TO THE GAME !!!")
+    print("GUESS A WORD AND TRY TO FILL ")
+    for k in range(l):
+        print("_ ",end='')
+    print("\n")
+    for j in range(10):
+        c=c+1
+
+        
+        
+        letter=input("enter any letter").lower()
+        if letter=='':
+            print("Input not found")
+        elif letter in w:
+            
+            print("you reached a step close")
+            print("KEEP IT UP!")
+            print("Attempts left:",10-c)
+            d=d+1
+            if d==l:
+                print("\n\nWELL DONE")
+                print("\nCONGRATULATIONS!")
+                print("!!!!YOU SUCCEDDED!!!!")
+                break
+        
+        else :
+            print("\n\nBetter luck next time")
+            print("Attempts left:",10-c)
+            if i<=5:
+                print(figure[i])
+        
+                i=i+1
+            else:
+                print(figure[i])
+                print("\n")
+                print("OH! YOU LOST")
+                print("****************Game Ended******************")
+                break
+            
+    choice=input("\n\nenter y if want to continue in game")
