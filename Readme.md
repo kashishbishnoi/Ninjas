@@ -5,13 +5,12 @@ Instructions for running the game: Our code generates a random word based on a t
 
 VERSION-1: The approach is good, but there are few errors I'd like to highlight:
 
-The number of attempts should'nt be decremented, if the guessed letter is correct.Attempts should only be reduced by one, if the user makes a wrong guess.
-Once the player guesses the whole word correctly, the program is supposed to declare the user as winner. However, the code is still running until the number of chances reduces to zero. Then, it asks the user if they want to play again without telling them if they won or lose.
-The figures of hangman are there in the code, but they are not being displayed on the screen as and when required, which needs to be done in the right way. As the name suggests, the game revolves around hangman, so the errors must be rectified to make the figures visible.
-The words are quite simple. I'd recommend to add some good vocabulary words to make the game more interesting and challenging
-If the user does'nt guess anything,it says congratulations , which denotes a correct guess. This is a big mistake that needs to be taken care of.
-The random words are generated inside the loop, which means every time the loop runs, it generates a new word.Put that outside the loop.
-If the player loses the game, it continues to ask the user to guess a letter. It should terminate the game right away.
+1. Once the player guesses the whole word correctly, the program is supposed to declare the user as winner. However, the code is still running until the number of chances reduces to zero. Then, it asks the user if they want to play again without telling them if they won or lose.
+2.The figures of hangman are there in the code, but they are not being displayed on the screen as and when required, which needs to be done in the right way. As the name suggests, the game revolves around hangman, so the errors must be rectified to make the figures visible.
+3. The words are quite simple. I'd recommend to add some good vocabulary words to make the game more interesting and challenging
+4. If the user does'nt guess anything,it says congratulations , which denotes a correct guess. This is a big mistake that needs to be taken care of.
+5. The random words are generated inside the loop, which means every time the loop runs, it generates a new word.Put that outside the loop.
+6. If the player loses the game, it continues to ask the user to guess a letter. It should terminate the game right away.
 The blanks were not there, make them visible using loops by counting the number of letters in the word and replace them by the letter as the player makes a right guess
 
 VERSION-2:
@@ -23,6 +22,9 @@ VERSION-2:
 6. The game won't congratulate the user again and again for making a right guess. It'd congratulate them at the end when they win.
 
 VERSION-3:
-
-
+1. All the errors have been rectified and the game runs smoothly without any technical interruptions.
+2. We've added emojis to make it look more fun and interactive.
+3. Corrected the errors regarding blanks.
+4. Worked more on the user interface to make it look more better.
+5. made the hints more precise and easy to comprehend by the player to cheer them up to keep playing.
 
